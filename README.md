@@ -5,7 +5,7 @@ mppack
 
 Multiple Precision computing PACKage, written in C++, is an extension of [BLAS](http://www.netlib.org/blas/) and [LAPACK](http://www.netlib.org/lapack/) with muliple precision data (real and complex) type supported in [ARPREC](http://crd.lbl.gov/~dhbailey/mpdist/).
 
-We provide two data type (_mp\_real_ and _mp\_complex_) in mppack, and modified BLAS and LAPACK's single float and single float complex routines' names, which have prefix __s__ and __c__, to names begin with __R__ and __C__, respectively.
+We provide three data type (begin with \_\_CLPK\_) in mppack, and modified BLAS and LAPACK's single float and single float complex routines' names, which have prefix __s__ and __c__, to names begin with __R__ and __C__, respectively.
 
 In mppack, we also extended ARPREC to support muliple precision complex number's input and output.
 
@@ -56,18 +56,11 @@ int main(int argc, char *argv[]) {
 ```
 
 The result gives a hundred sigular value, the three biggest and smallest values are listed as follows:
---------------------------------------------------
-10 ^ 0 x 2.18269609775742384304764059192
 
-10 ^ -1 x 8.21445560556197520233200225095
+Biggest values | Smallest values
+------------ | -------------
+10 ^  0 x 2.1826960977574238 | 10 ^ -144 x 1.4443909342666313
+10 ^ -1 x 8.2144556055619752 | 10 ^ -147 x 1.2973462506785146
+10 ^ -1 x 2.1859588237069696 | 10 ^ -151 x 5.7797008628348028
 
-10 ^ -1 x 2.18595882370696967203904906984
 
-...
-
-10 ^ -144 x 1.4443909342666313695029097586
-
-10 ^ -147 x 1.29734625067851467205032032875
-
-10 ^ -151 x 5.77970086283480284745628019746
---------------------------------------------------
