@@ -13,7 +13,7 @@ In mppack, we also extended ARPREC to support muliple precision complex number's
 
 1. 
 
-2. Singular value decomposition (svd) of 100th Hilbert Matrix ($hij$)
+2. Singular value decomposition (svd) of 100th Hilbert Matrix
 
 
 ``` cpp
