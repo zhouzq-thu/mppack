@@ -66,3 +66,4 @@ Biggest values | Smallest values
 10 ^ -1 x 2.1859588237069696 | 10 ^ -151 x 5.7797008628348028
 
 
+Copyright (c) 2014 Zhi-Qiang Zhou.
