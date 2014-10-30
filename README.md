@@ -5,13 +5,15 @@ mppack
 
 Multiple Precision computing PACKage, written in C++, is an extension of [BLAS](http://www.netlib.org/blas/) and [LAPACK](http://www.netlib.org/lapack/) with muliple precision data (real and complex) type supported in [ARPREC](http://crd.lbl.gov/~dhbailey/mpdist/).
 
-We provide three data type (begin with \_\_CLPK\_) in mppack, and modified BLAS and LAPACK's single float and single float complex routines' names, which have prefix __s__ and __c__, to names begin with __R__ and __C__, respectively.
+We provide three data type (begin with \_\_CLPK\_) in mppack, and modified BLAS and LAPACK's single float and single float complex routines' names, which have prefix __s__ and __c__, to names begin with __R__ and __C__, respectively. All function names and data type names are very similar to these of Accelerate Framework in Mac OSX's Xcode. So, you can easily modify you older source code to use this package for a high precision computing.
 
 In mppack, we also extended ARPREC to support muliple precision complex number's input and output.
 
 ### Example
 
-1. Singular value decomposition (svd) of 100th Hilbert Matrix
+1. 
+
+2. Singular value decomposition (svd) of 100th Hilbert Matrix ($hij$)
 
 
 ``` cpp
