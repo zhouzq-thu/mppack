@@ -13,6 +13,11 @@ __All \_\_CLPK\_ numbers inputted should be follows a comma(,).__
 
 In mppack, we also extended ARPREC to support muliple precision complex number's input and output.
 
+### How to use
+
+1. Add the include folder to /urs/local
+2. git the CgeevExample(Xcode project)
+
 ### Example
 
 1. [Find all eigenvalues of a complex matrix](http://www.nag.com/lapack-ex/node92.html)
