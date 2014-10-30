@@ -11,4 +11,46 @@ In mppack, we also extended ARPREC to support muliple precision complex number's
 
 ### Example
 
-#### Singular value decomposition (svd) of 100th Hilbert Matrix
+1. Singular value decomposition (svd) of 100th Hilbert Matrix
+
+
+``` cpp
+\#include <iostream>
+	\#include <iomanip>
+	\#include <Arprec.h>
+	\#include <mplapack.h>
+
+	using namespace std;
+
+	int main(int argc, char *argv[]) {
+	
+    mp::mp_init(200);
+    
+    __CLPK_integer num_rows = 100;
+    __CLPK_integer num_cols = 100;
+    
+    // create data array for our matrix. Will be a vector that is num_rows*num_cols elements
+    // to access A(r,c) use A[r+c*num_rows], in otherwords major column ordering. {r1c1,r2c1,r3c1...}
+    __CLPK_real *A = new __CLPK_real[num_rows*num_cols];
+    
+    // Fill in A the "normal" way and fill in B
+    for(int row = 0; row<num_rows; row++) {
+        for(int col = 0; col<num_cols; col++) {
+            A[row+col*num_rows] = mp_real(1.0)/(row+col+1);
+        }
+    }
+    
+    char jobu = 'N', jobvt = 'N';
+    __CLPK_integer m = num_rows, n = num_cols;
+    __CLPK_integer lda = m, ldu = m, ldvt = m, lwork = 6*m, info;
+    __CLPK_real *work  = new __CLPK_real[6*m];
+    __CLPK_real *s     = new __CLPK_real[m];
+    
+    Rgesvd_(&jobu, &jobvt, &m, &n, A, &lda, s, NULL, &ldu, NULL, &ldvt, work, &lwork, &info);
+    
+    cout.precision(30);
+    for(int row = 0; row<num_rows; row++) {
+        cout << s[row] << endl;
+    }
+    }
+```
