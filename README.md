@@ -90,10 +90,10 @@ Eigenvalues:
 
 
 ``` cpp
-\#include <iostream>
-\#include <iomanip>
-\#include <Arprec.h>
-\#include <mplapack.h>
+#include <iostream>
+#include <iomanip>
+#include <Arprec.h>
+#include <mplapack.h>
 
 using namespace std;
 int main(int argc, char *argv[]) {
