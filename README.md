@@ -16,14 +16,14 @@ In mppack, we also extended ARPREC to support muliple precision complex number's
 
 ``` cpp
 \#include <iostream>
-	\#include <iomanip>
-	\#include <Arprec.h>
-	\#include <mplapack.h>
+\#include <iomanip>
+\#include <Arprec.h>
+\#include <mplapack.h>
 
-	using namespace std;
+using namespace std;
+int main(int argc, char *argv[]) {
 
-	int main(int argc, char *argv[]) {
-	
+    //Initialize ARPREC with 200 digits
     mp::mp_init(200);
     
     __CLPK_integer num_rows = 100;
@@ -52,5 +52,5 @@ In mppack, we also extended ARPREC to support muliple precision complex number's
     for(int row = 0; row<num_rows; row++) {
         cout << s[row] << endl;
     }
-    }
+}
 ```
