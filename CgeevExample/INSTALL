@@ -1,0 +1,9 @@
+This example is tested under the Xcode 6.1, Mac OS X 10.10 Yosemite.
+
+1. Add the include folder to /urs/local.
+
+2. Copy Cgeev.d to somewhere, and modify the path in main.cpp.
+
+3. Open CgeevExample project under Xcode.
+
+4. Hit Run.
