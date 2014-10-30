@@ -1,0 +1,277 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBBAE2611A0224D000786358 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE2601A0224D000786358 /* main.cpp */; };
+		CBBAE2801A02250400786358 /* libarprec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBAE27D1A02250400786358 /* libarprec.a */; };
+		CBBAE2811A02250400786358 /* libblas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBAE27E1A02250400786358 /* libblas.a */; };
+		CBBAE2821A02250400786358 /* liblapack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBAE27F1A02250400786358 /* liblapack.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBBAE25B1A0224D000786358 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CBBAE25D1A0224D000786358 /* CgeevExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CgeevExample; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBAE2601A0224D000786358 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CBBAE27D1A02250400786358 /* libarprec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libarprec.a; sourceTree = "<group>"; };
+		CBBAE27E1A02250400786358 /* libblas.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libblas.a; sourceTree = "<group>"; };
+		CBBAE27F1A02250400786358 /* liblapack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblapack.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBBAE25A1A0224D000786358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBAE2801A02250400786358 /* libarprec.a in Frameworks */,
+				CBBAE2811A02250400786358 /* libblas.a in Frameworks */,
+				CBBAE2821A02250400786358 /* liblapack.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBBAE2541A0224D000786358 = {
+			isa = PBXGroup;
+			children = (
+				CBBAE27C1A02250400786358 /* lib */,
+				CBBAE25F1A0224D000786358 /* CgeevExample */,
+				CBBAE25E1A0224D000786358 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBBAE25E1A0224D000786358 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBBAE25D1A0224D000786358 /* CgeevExample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBBAE25F1A0224D000786358 /* CgeevExample */ = {
+			isa = PBXGroup;
+			children = (
+				CBBAE2601A0224D000786358 /* main.cpp */,
+			);
+			path = CgeevExample;
+			sourceTree = "<group>";
+		};
+		CBBAE27C1A02250400786358 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CBBAE27D1A02250400786358 /* libarprec.a */,
+				CBBAE27E1A02250400786358 /* libblas.a */,
+				CBBAE27F1A02250400786358 /* liblapack.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBBAE25C1A0224D000786358 /* CgeevExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBBAE2641A0224D000786358 /* Build configuration list for PBXNativeTarget "CgeevExample" */;
+			buildPhases = (
+				CBBAE2591A0224D000786358 /* Sources */,
+				CBBAE25A1A0224D000786358 /* Frameworks */,
+				CBBAE25B1A0224D000786358 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CgeevExample;
+			productName = CgeevExample;
+			productReference = CBBAE25D1A0224D000786358 /* CgeevExample */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBBAE2551A0224D000786358 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Zhi-Qiang Zhou";
+				TargetAttributes = {
+					CBBAE25C1A0224D000786358 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = CBBAE2581A0224D000786358 /* Build configuration list for PBXProject "CgeevExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CBBAE2541A0224D000786358;
+			productRefGroup = CBBAE25E1A0224D000786358 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBBAE25C1A0224D000786358 /* CgeevExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBBAE2591A0224D000786358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBAE2611A0224D000786358 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CBBAE2621A0224D000786358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CBBAE2631A0224D000786358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CBBAE2651A0224D000786358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CBBAE2661A0224D000786358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBBAE2581A0224D000786358 /* Build configuration list for PBXProject "CgeevExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBBAE2621A0224D000786358 /* Debug */,
+				CBBAE2631A0224D000786358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBBAE2641A0224D000786358 /* Build configuration list for PBXNativeTarget "CgeevExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBBAE2651A0224D000786358 /* Debug */,
+				CBBAE2661A0224D000786358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBBAE2551A0224D000786358 /* Project object */;
+}
