@@ -7,6 +7,8 @@ Multiple Precision computing PACKage, written in C++, is an extension of [BLAS](
 
 We provide three data type (begin with \_\_CLPK\_) in mppack, and modified BLAS and LAPACK's single float and single float complex routines' names, which have prefix __s__ and __c__, to names begin with __R__ and __C__, respectively. All function names and data type names are very similar to these of Accelerate Framework in Mac OSX's Xcode. So, you can easily modify you older source code to use this package for a high precision computing.
 
+__All \_\_CLPK\_ numbers inputted should be follows a comma(,).__
+
 In mppack, we also extended ARPREC to support muliple precision complex number's input and output.
 
 ### Example
